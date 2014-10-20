@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<title>Relative, Absolute, and Fixed Positioning</title>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<h1>Thoughts From My Head</h1>
+		</div>
+
+		<div id="content">
+			<h3>Relative, Absolute, and Fixed Positioning</h3>
+			<h5>10/19/2014</h5>
+				<p>Today I'm going to go over the differences of relative, absolute, and fixed positioning.  These properties are very useful to designing a website and allow you to position your tags in a couple of different ways.  To help with your understanding, think of the elements on a web page as blocks.  In other words, a web page is a giant block that contain smaller blocks.  With that in mind, lets continue.
+				<br><br>
+				<strong>Static:</strong>  This is the default position for every element on a web page.  The element will flow into the page in the order you wrote it.  You would only set an element to static is you want remove the positioning that carries over from its parent.<a href="static-div.png"><img src="static-div.png" /></a><br>
+				<br>
+				<strong>Relative:</strong>  Relative positioning allows you to place a element relative to itself on the page.  So if you added the attribute `left: 50px` the element would move right 50px relative to its original position.
+				<a href="relative-div.png"><img src="relative-div.png" /></a>
+				<a href="relative-div.png"><img src="relative-div2.png" /></a> <br> Without any other positioning attributes like left, setting an element to relative would have no effect.  It would be static.  Relative positioning also allows the addition of a z-index, which basically controls the vertical stacking order of elements that overlap.<br>
+				<br>
+				<strong>Absolute:</strong>  Absolute positioning removes that element from  the flow of the page.  It has no effect on other elements on the page.  If you added the attribute `left 50px` to the element it would move that element relative to the page.  If you add the absolute attribute to an element with a parent element that has the relative attribute, the absolute element would be moved relative to the parent element.<a href="absolute-div.png"><img src="absolute-div.png" /></a><br>
+				<br>
+				<strong>Fixed:</strong>  An element that has a fixed position is shown relative to the browser window.  So if you scroll up or down the element will move with the page.  This can sometimes be handy in navigation bars.<a href="fixed-div.png"><img src="fixed-div.png" /></a>
+				<a href="fixed-div2.png"><img src="fixed-div2.png" /></a>
+				<br><br>
+				That is all for now.  I hoped you liked my post.  Check out this <a href="http://www.barelyfitz.com/screencast/html-training/css/positioning/">link</a> if you'd like more visuals of the differences. 
+			</p>
+		</div>
+
+		<div id="nav">
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="#">Blog</a>
+				</li>
+				<li>
+					<a href="#">Portfolio</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+		<div id="footer">
+			<h6><a href="https://twitter.com/mrvp194" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @mrvp194</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+			<a href="http://www.linkedin.com/pub/michael-van-pelt/56/994/646">
+      
+          <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_120x33.png" width="120" height="33" border="0" alt="View Michael Van Pelt's profile on LinkedIn">
+        <iframe src="http://ghbtns.com/github-btn.html?user=mrvp194&type=follow"
+  allowtransparency="true" frameborder="0" scrolling="0" width="120" height="33"></iframe>
+    </a></h6>
+	</div>
+</body>
+</html>
