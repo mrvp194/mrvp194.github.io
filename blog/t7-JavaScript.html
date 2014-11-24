@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<title>Blog</title>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<h1>Thoughts From My Head</h1>
+		</div>
+
+		<div id="content">
+			<h3>Ruby Hashes vs. JavaScript Objects</h3>
+			<h5>11/23/2014</h5>
+			<p>Ruby hashes and JavaScript Objects are very similar in many ways.  If you were to look at what both of them looked like next to eachother you would probably have a little bit of difficulty telling the two apart.  For example: <blockquote>hash = { name: "Mike"}<br>
+			puts hash[:name]  => "Mike"<br><br>
+			var obj = {name: "Mike"}<br>
+			console.log(obj["name"])  => "Mike"</blockquote>
+			As you can see, JavaScript uses a similar key/value pair setup as Ruby's hashes as well as its use of {} to hold the values.  Objects use name/value pair instead.</p>
+			<p>The main difference between JS objects and Ruby hashes is that JS does not restrict access to it's properties(which are the values held within an object).  Ruby however enforces a certain level of data encapsulation by not providing a simple way to access its internal instance variables.  You have to enter the object's context through a method call to operate on instance variables.  There are some Ruby methods that work around this however.  So, although Ruby Hashes and JavaScript Objects both look the same, they are both used and implemented in different ways.</p>
+		</div>
+
+		<div id="nav">
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="blog-template.html">Blog</a>
+				</li>
+				<li>
+					<a href="#">Portfolio</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+		<div id="footer">
+			<h6><a href="https://twitter.com/mrvp194" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @mrvp194</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+			<a href="http://www.linkedin.com/pub/michael-van-pelt/56/994/646">
+      
+          <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_120x33.png" width="120" height="33" border="0" alt="View Michael Van Pelt's profile on LinkedIn">
+        <iframe src="http://ghbtns.com/github-btn.html?user=mrvp194&type=follow"
+  allowtransparency="true" frameborder="0" scrolling="0" width="120" height="33"></iframe>
+    </a></h6>
+	</div>
+</body>
+</html>
