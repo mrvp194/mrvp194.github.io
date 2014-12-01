@@ -131,3 +131,48 @@ body {
 #footer h6 {
 	font-size: 12px;
 }
+
+table {
+
+	border-style: solid;
+	background: #80BCA3;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	border-radius: 25px;
+	text-align: left;
+}
+
+thead {
+	display: table-header-group;
+	vertical-align: middle;
+}
+
+thead tr {
+	
+}
+
+thead tr th {
+	text-align: left;
+	
+	padding-left: 10px;
+}
+
+tr {
+	display: table-row;	
+}
+th {
+	padding-top: 10px;
+}
+
+#code {
+	background: #272822;
+	color: white;
+	font-family: monospace;
+	font-size: 18px;
+}
+
+#move {
+	padding-left: 10px;
+}
