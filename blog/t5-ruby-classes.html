@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+	<link rel="stylesheet" type="text/css" href="stylesheet2.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Oregano' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-	<title>Blog</title>
+	<title>Mike's Corner</title>
 </head>
 <body>
+
 	<div id="container">
-		<div id="header">
-			<h1>Thoughts From My Head</h1>
+		<div id = "head">
+		<ul id="navlist">
+			
+			<li><a href="index.html", class="navi", style="text-decoration:none;">Home</a></li>
+			<li><a href="about.html", class="navi", style="text-decoration:none;">About</a></li>
+			<li><a href="blog.html", class="navi", style="text-decoration:none;">Blog</a></li>
+			<li><a href="#", class="navi", style="text-decoration:none;">Portfolio</a></li>
+			
+		</ul>
 		</div>
 
-		<div id="content">
+		<div id="display">
 			<h3>Ruby Classes</h3>
 			<h5>11/9/2014</h5>
 			<p>Today I'm going to discuss classes in ruby and when to use instance vaiables and methods.  I'll start off with an explanation of local variables.  A Local Variable is a variable that is defined in a method.  Local variables cannot be accessed outsite of the method.  Local variable begin with a lowercase letter or _ and are most likely the kind of variables you've been using up to this point.<br><br>
@@ -31,30 +42,17 @@
 			 In the example above @name is the instance variable.  Take note at how we define it in the first method and then call it in the second method.  You could not do this with a local variable because it is only stored within the method it is defined in.<br><br>
 			 Instance methods are fairly simple to their variable counterparts in that they allow you to call them anywhere within the class they were defined.  Initialize and hello in the above example are both instance methods.</p>
 		</div>
-
-		<div id="nav">
-			<ul>
-				<li>
-					<a href="index.html">Home</a>
-				</li>
-				<li>
-					<a href="blog-template.html">Blog</a>
-				</li>
-				<li>
-					<a href="#">Portfolio</a>
-				</li>
-			</ul>
-		</div>
-	</div>
+	
 		<div id="footer">
-			<h6><a href="https://twitter.com/mrvp194" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @mrvp194</a>
+		<h6><a href="https://twitter.com/mrvp194" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @mrvp194</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-			<a href="http://www.linkedin.com/pub/michael-van-pelt/56/994/646">
+		<a href="http://www.linkedin.com/pub/michael-van-pelt/56/994/646">
       
           <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_120x33.png" width="120" height="33" border="0" alt="View Michael Van Pelt's profile on LinkedIn">
         <iframe src="http://ghbtns.com/github-btn.html?user=mrvp194&type=follow"
   allowtransparency="true" frameborder="0" scrolling="0" width="120" height="33"></iframe>
     </a></h6>
+	</div>
 	</div>
 </body>
 </html>
