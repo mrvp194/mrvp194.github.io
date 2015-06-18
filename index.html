@@ -1,89 +1,166 @@
 <!DOCTYPE html>
-<html>
+<html manifest=''>
 <head>
 	<link rel="stylesheet" type="text/css" href="stylesheet2.css" />
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+	<script type="text/javascript" src="jquery.easyModal.js"></script>
 	<script type="text/javascript" src="jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.5/TweenMax.min.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Oregano' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-	<title>Mike's Corner</title>
+	<title>Michael Van Pelt | Web Developer</title>
 </head>
 <body>
-	<div id="aus">
-		<img id="pic", src="blog/australia5.jpg">
-		<div id="welcome">Welcome</div>
-		<a href="#"><div id="clickMe">Click Me</div></a>
+	<div id='links'>
+		<a href='https://github.com/mrvp194' target="_blank"><img src='github.svg'></a>
+		<a href='https://www.linkedin.com/in/mrvp194' target="_blank"><img src='linkedin.svg'></a>
+		<a href='https://plus.google.com/u/0/106364046540364997004/posts/p/pub' target="_blank"><img src="g+.svg"></a>
 	</div>
 
+	<div id='tagline'>Welcome</div>
+	<hr id="hr">
+
+	<div id="nav">
+		<ul>
+			<a href="index.html"><li id='home'>Home</li></a>
+			<hr>
+
+			<a href="#"><li id='resume'>Resume</li></a>
+			<hr>
+			<a href="#"><li id='portfolio'>Portfolio</li></a>
+		</ul>
+	</div>
 
 
 	
 	<div id="container">
-		<div id = "head">
-		<ul id="navlist">
-			
-			<li><a href="#", class="navi", style="text-decoration:none;">Home</a></li>
-			<li><a href="about.html", class="navi", style="text-decoration:none;">About</a></li>
-			<li><a href="blog/blog.html", class="navi", style="text-decoration:none;">Blog</a></li>
-			<li><a href="#", class="navi", style="text-decoration:none;">Portfolio</a></li>
-			
+
+		<p>Hello!&nbsp My name is Michael Van Pelt.&nbsp Whether by chance or by choice you have just stumbled upon my website.&nbsp I am a web developer that specializes in Ruby on Rails, with a touch of JavaScript added in.&nbsp If you would like to reach out, feel free to email me at mrvp194@gmail.com.&nbsp Enjoy the tunes!</p>
+	
+	</div>
+
+	<dialog id="res">
+
+		<strong>Summary</strong><br>
+		<p>I'm a web developer with a passion for problem solving.&nbsp with a love for making music, I discovered a couple years ago that making a beat was a very similar process to writing code.&nbsp it is my dream one day to create software that makes the day to day lives of the masses easier.</p>
+		<strong>Technical Skills</strong><br>
+		<ul>
+			<li>Experience with Ruby, Rails, Html5, CSs, and JavaScript including but not limited to jQuery, AJAX and Geolocation.
+			</li>
+			<li>
+				Website management using WordPress, Appfog, Network Solutions, Mailgun, Amazon Web Services, and MySQL database.
+			</li>
+			<li>
+				Proficient with Google Analytics, Google Webmaster Tools, Google AdWords, SEO, Constant Contact, Adobe Illustrator and Photoshop.
+			</li>
+			<li>
+				Video and music editing skills with knowledge of Pinnacle, Final Cut Pro, Maschine and Virtual DJ.
+			</li>
 		</ul>
-		</div>
-		<div id="content">
-			<p>Michael Van Pelt</p>
-			<img id="aus2", src="blog/australia2.jpg">
-		</div>
-		<div id="foot">
-		<h6><a href="https://twitter.com/mrvp194" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @mrvp194</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-		<a href="http://www.linkedin.com/pub/michael-van-pelt/56/994/646">
-      
-          <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_120x33.png" width="120" height="33" border="0" alt="View Michael Van Pelt's profile on LinkedIn">
-        <iframe src="http://ghbtns.com/github-btn.html?user=mrvp194&type=follow"
-  allowtransparency="true" frameborder="0" scrolling="0" width="120" height="33"></iframe>
-    </a></h6>
-    
-	</div>
-	</div>
-	<!--
-		<div id="header">
-			<h1>Mike's Corner</h1>
-		</div>
 
-		<div id="me">
-			<img src="profile1.jpg" />
-			<div id="info">
-			<p>Hey there!<br>
-				I'm Michael Van Pelt and you have just stumbled upon my personal website.  Check out my posts.</p>
-			</div>
-		</div>
+		<strong>Experience</strong><br>
+		<strong>Student</strong>, Dev Bootcamp<span class='right'>September 2014 - February 2015</span><br>
+		<ul>
+			<li>
+				Completed 19-week intensive web development program.
+			</li>
+			<li>
+				Focused of algorithmic thinking, agile development, source control, database design, test-driven development, and maintaining a production environment.
+			</li>
+			<li>
+				Pitched idea and led my team projet developing AudioScape, a location aware music app that allows a user to listen to the music of those around him.
+			</li>
+		</ul>
 
-		<div id="nav">
-			<ul>
-				<li>
-					<a href="index.html">Home</a>
-				</li>
-				<li>
-					<a href="blog-template.html">Blog</a>
-				</li>
-				<li>
-					<a href="#">Portfolio</a>
-				</li>
-			</ul>
-		</div>
+		<strong>Marketing Coordinator</strong>, N9NE Group Chicago<span class='right'>May 2012 - June 2013</span><br>
 
-		<div id="post1">
-			<a href="t1-git-blog.html">
-			<img src="github.jpg", id="first" /></a>
-			<a href="c1-chefs-kitchen.html">
-			<img src="fireside.jpg", id="middle" /></a>
-			<a href="t2-css-design.html">
-			<img src="positioing.png", id="third" /></a>
-		</div>
-	</div>
-		-->
+		<ul>
+			<li>
+				Webmaster for n9ne.com including SEO, editing of website copy, HTML5 and JavaScript coding, migrating code across multiple infrastructures, and general website maintenance.
+			</li>
+			<li>
+				Managed campaigns and presence in social media platforms including Facebook, Twitter, Instagram, Google+, LinkedIn, Spoonfeed, Yelp and Pinterest.
+			</li>
+			<li>
+				Designed print ads and electronic medias.
+			</li>
+			<li>
+				Organized email marketing program including weekly e-blasts, press releases and other notable promotions.
+			</li>
+			<li>
+				Trained, mentored, and directly managed interns from N9NE&#39s internship program.
+			</li>
+			<li>
+				Managed yearly charity and off-site event program.
+			</li>
+		</ul>
+
+		<strong>Assistant Site Manager</strong>, Van Pelt Construction, Chicago<span class='right'>May 2010 - May 2012</span><br>
+		<ul>
+			<li>
+				Managed construction and demolition site equipment including pumps, compressors, and generators.
+			</li>
+			<li>
+				Oversaw distribution of building materials to the appropriate location according to project plans and specifications.
+			</li>
+			<li>
+				Supervised erection of scaffolding and other construction equipment.
+			</li>
+		</ul>
+
+		<strong>Education</strong><br><br>
+		National Outdoor Leadership School<span class='right'>December 2011</span>
+
+		<p>Spent 88 days living and studying in the wilderness in the southwestern desert region of the United States with focus on Leadership Training and Wilderness Expedition Outdoor/Survival Skills.</p>
+
+		Francis W. Parker High School, Chicago, Illinois<span class='right'>June 2009</span>
+
+		<p><strong>Varsity Baseball Team, Pitcher</strong> [2006-2009] 2009 Team Captain; named All-League ISL Player all four seasons. Recruited by numerous colleges nationwide to play college-level baseball.</p>
+	</dialog>
+
+	<dialog id='port'>
+		<p>Unfortunately, since I have just graduated from Dev Bootcamp I haven't had much opportunity to fill out this section with anything notable.&nbsp Stay tuned though, as I have a couple projects I am currently working on with some artists that will involve animating their artwork.</p>
+	</dialog>
+
+
 			
-		
+	<div id="music">
+
+		<div id="current">
+			<h6><span></span></h6>
+		</div>
+
+		<svg id="last" height="64" width="64">
+			<polygon points="30,13 8,31 30,54" style="fill:white" />
+			<polygon points="54,13 30,31 54,54" style="fill:white" />
+		</svg>
+
+		<svg height="64" width="64" id="play">
+			<polygon points="15,10 54,32 15,54" style="fill:white" />
+		</svg>
+
+		<svg id="pause" height="64" width="64">
+				<rect x="15" y="12" width="12" height="40" style="fill:white" />
+				<rect x="35" y="12" width="12" height="40" style="fill:white" />
+
+			
+		</svg>
+
+		<svg id="next" height="64" width="64">
+			<polygon points="10,13 34,31 10,54" style="fill:white" />
+			<polygon points="34,13 56,31 34,54" style="fill:white" />
+		</svg>
+
+			
+
+	</div>
+
+
 
 	
 	
