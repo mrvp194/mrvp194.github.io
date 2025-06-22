@@ -37,7 +37,7 @@
         var foodTetris = [["Ocean Whitefish & Tuna Gravy Pate", "Chicken Gravy Pate"], ["Beef Gravy Pate", "Chicken Stew"]];
         const oneDay = 24 * 60 * 60 * 1000;
         const startingDate = new Date("June 23, 2025");
-        var date = new Date("July 14, 2025");
+        var date = new Date();
         var daysBetween = (date - startingDate) / oneDay;
         var endOfCycleDinner = Math.ceil(daysBetween / 28) * 28;
         var dayDiffDinner = daysBetween >= 28 ? endOfCycleDinner - daysBetween : daysBetween;
@@ -56,17 +56,13 @@
         }
         function getBreakfastTetris() {
             var index = tetrisIndeices[dayDiffTetris];
-            console.log(foodTetris[index][0])
             return foodTetris[index][0];
         }
         function getDinnerTetris() {
             var index = tetrisIndeices[dayDiffTetris];
-            console.log(foodTetris[index][1])
             return foodTetris[index][1];
         }
-        console.log(document.getElementsByClassName("breakfastTetris"))
         document.getElementsByClassName("breakfastTetris")[0].innerHTML = getBreakfastTetris();
-        console.log(document.getElementsByClassName("breakfastTetris"))
         document.getElementsByClassName("breakfastZelda")[0].innerHTML = getBreakfastZelda();
         document.getElementsByClassName("dinnerTetris")[0].innerHTML = getDinnerTetris();
         document.getElementsByClassName("dinnerZelda")[0].innerHTML = getDinnerZelda();
