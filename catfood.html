@@ -38,7 +38,7 @@
         const oneDay = 24 * 60 * 60 * 1000;
         const startingDate = new Date("June 22, 2025");
         var date = new Date();
-        var daysBetween = (date - startingDate) / oneDay;
+        var daysBetween = Math.floor((date - startingDate) / oneDay);
         var endOfCycleDinner = Math.ceil(daysBetween / 28) * 28;
         var dayDiffDinner = daysBetween >= 28 ? endOfCycleDinner - daysBetween : daysBetween;
         var endOfCycleBreakfast = Math.ceil(daysBetween / 21) * 21;
